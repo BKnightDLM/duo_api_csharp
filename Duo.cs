@@ -191,7 +191,7 @@ namespace Duo
                               int timeout,
                               out HttpStatusCode statusCode)
         {
-            return ApiCall(method, path, parameters, 0, DateTime.UtcNow, out statusCode);
+            return ApiCall(method, path, parameters, timeout, DateTime.UtcNow, out statusCode);
         }
 
         /// <param name="date">The current date and time, used to authenticate
